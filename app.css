@@ -135,7 +135,62 @@ input[type=number] {
     padding: 0.5em;
 }
 
+.totals {
+    background-color: hsl(183, 100%, 15%);
+    padding: 1em;
+    border-radius: 10px;
+    color: white;
+    font-size: small;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
 
+span {
+    color: hsl(172, 67%, 45%);
+    font-weight: 700;
+    font-size: x-large;
+    float: right;
+ }
+
+ #reset {
+    margin: auto;
+    padding: 0.2em;
+    width: 100%;
+    background-color: hsl(172, 67%, 45%);
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-size: large;
+    margin-top: 100px;
+    max-height: 30px;
+    }
+
+#reset:hover {
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 400px) {
+    .container {
+        grid-template-areas: 
+            'inputs totals';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    fieldset {
+        grid-template-areas: 
+            'five ten fifteen'
+            'twentyfive fifty custom';
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .totals {
+        grid-template-rows: 1fr 1fr 2fr;
+    }
+}
 
 
 .attribution { 
