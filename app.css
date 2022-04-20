@@ -1,4 +1,37 @@
+body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.container {
+    width: 100%;
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    max-width: 620px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: 
+        'inputs'
+        'totals'
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1fr;
+    grid-gap: 15px;
+}
+
+.container > .inputs {
+    grid-area: inputs;
+}
+
+.container > .totals {
+    grid-area: totals;
+}
 
 .attribution { 
     font-size: 11px; 
