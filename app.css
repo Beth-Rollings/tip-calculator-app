@@ -33,7 +33,7 @@ input[type=number] {
         'totals'
     ;
     grid-template-columns: 1fr;
-    grid-template-rows: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 15px;
 }
 
@@ -135,6 +135,8 @@ input[type=number] {
     padding: 0.5em;
 }
 
+/*TOTALS*/
+
 .totals {
     background-color: hsl(183, 100%, 15%);
     padding: 1em;
@@ -196,6 +198,7 @@ span {
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    padding: 0.5em;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
