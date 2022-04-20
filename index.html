@@ -17,7 +17,7 @@
 <body>
   <h1>SPLITTER</h1>
 
-  <div class="container">
+  <div class="container" id="inputs">
     <div id="bill">
       <p>Bill</p>
       <input type="number" id="bill-input" name="bill" required>
@@ -47,13 +47,23 @@
 
   </div>
 
-  Tip Amount
-  / person
+  <div class="container" id="totals">
+    <div id="tip-amount">
+      <p>Tip Amount
+        / person
+        <span id="tipTotal">£0.00</span>
+      </p>
+    </div>
+    <div id="total">
+      <p>Total
+        / person
+        <span id="person-total">£0.00</span>
+      </p>
+    </div>
+    <button id="reset">RESET</button>
+  </div>
 
-  Total
-  / person
 
-  Reset
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
