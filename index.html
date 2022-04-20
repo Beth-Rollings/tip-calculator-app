@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="app.css">
   <title>Frontend Mentor | Tip calculator app</title>
-   
+
 </head>
+
 <body>
   <h1>SPLITTER</h1>
 
-  Bill
+  <div class="container">
+    <div id="bill">
+      <p>Bill</p>
+      <input type="number" id="bill-input" name="bill" required>
+    </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+    <div id="select-tip">
+      <p>Select Tip %</p>
+      <fieldset>
+        <input type="radio" id="five" value="0.05" placeholder="5%" name="tip-percentage">
+        <label for="five">5%</label>
+        <input type="radio" id="ten" value="0.1" name="tip-percentage">
+        <label for="ten">10%</label>
+        <input type="radio" id="fifteen" value="0.15" name="tip-percentage">
+        <label for="fifteen">15%</label>
+        <input type="radio" id="twentyFive" value="0.25" name="tip-percentage">
+        <label for="twentyFive">25%</label>
+        <input type="radio" id="fifty" value="0.5" name="tip-percentage">
+        <label for="fifty">50%</label>
+        <input type="number" id="custom" placeholder="Custom">
+      </fieldset>
+    </div>
 
-  Number of People
+    <div id="people">
+      <p>Number of People</p>
+      <input type="number" id="no-of-people" required>
+    </div>
+
+  </div>
 
   Tip Amount
   / person
@@ -33,10 +54,11 @@
   / person
 
   Reset
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
